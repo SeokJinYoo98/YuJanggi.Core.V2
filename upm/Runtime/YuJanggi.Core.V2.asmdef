@@ -1,4 +1,8 @@
 {
   "name": "YuJanggi.Core.V2",
-  "rootNamespace": "YuJanggi.Core.V2"
+  "rootNamespace": "YuJanggi.Core.V2",
+  "references": [],
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "noEngineReferences": true
 }
