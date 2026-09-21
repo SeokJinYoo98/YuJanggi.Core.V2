@@ -1,7 +1,7 @@
-﻿namespace YuJanggi.Core
+﻿namespace YuJanggi.Core.V2
 {
     public static class CoreVersion
     {
-        public const string Current = "1.0.3";
+        public const string Current = "1.0.0";
     }
 }

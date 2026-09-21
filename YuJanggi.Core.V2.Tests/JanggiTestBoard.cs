@@ -1,7 +1,7 @@
-using YuJanggi.Core.Board;
-using YuJanggi.Core.Domain;
-using YuJanggi.Core.Match;
-using YuJanggi.Core.Rule;
+using YuJanggi.Core.V2.Board;
+using YuJanggi.Core.V2.Domain;
+using YuJanggi.Core.V2.Match;
+using YuJanggi.Core.V2.Rule;
 
 namespace YuJanggiCore.Tests;
 

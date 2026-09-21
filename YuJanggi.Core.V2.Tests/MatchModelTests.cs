@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using YuJanggi.Core.Domain;
+using YuJanggi.Core.V2.Domain;
 
 namespace YuJanggiCore.Tests;
 

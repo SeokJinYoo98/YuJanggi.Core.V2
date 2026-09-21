@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace YuJanggi.Core.Domain
+namespace YuJanggi.Core.V2.Domain
 {
     public interface IGameResultContext
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace YuJanggi.Core.Match
+namespace YuJanggi.Core.V2.Match
 {
     using Domain;
     public class Record

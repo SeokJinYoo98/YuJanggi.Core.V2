@@ -1,5 +1,5 @@
 using System;
-namespace YuJanggi.Core.Match
+namespace YuJanggi.Core.V2.Match
 {
     using Domain;
     public class Turn

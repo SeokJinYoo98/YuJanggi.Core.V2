@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace YuJanggi.Core.Match.Movement
+namespace YuJanggi.Core.V2.MovementRule
 {
     using Board;
     using Domain;

@@ -1,10 +1,11 @@
 
 using System.Collections.Generic;
-namespace YuJanggi.Core.Rule
+using YuJanggi.Core.V2.MovementRule;
+
+namespace YuJanggi.Core.V2.Rule
 {
     using Board;
     using Domain;
-    using Match.Movement;
     public class PalaceRule
     {
         private PalaceMovement _palaceMovement;

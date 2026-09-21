@@ -1,4 +1,4 @@
-namespace YuJanggi.Core.Match.Movement
+namespace YuJanggi.Core.V2.MovementRule
 {
     public class ElephantMovement : PatternMovement
     {

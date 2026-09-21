@@ -1,5 +1,5 @@
 using System;
-namespace YuJanggi.Core.Board
+namespace YuJanggi.Core.V2.Board
 {
     using Domain;
    

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace YuJanggi.Core.Domain
+namespace YuJanggi.Core.V2.Domain
 {
     using Board;
     public readonly struct SelectionInfo

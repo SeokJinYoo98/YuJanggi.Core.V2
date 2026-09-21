@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace YuJanggi.Core.Rule
+namespace YuJanggi.Core.V2.Rule
 {
     using Domain;
     using Board;
