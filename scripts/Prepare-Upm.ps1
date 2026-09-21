@@ -27,12 +27,10 @@ if ($generatedRoot -ne $expectedRoot -or
     throw 'Generated output must stay inside this repository.'
 }
 
-# Resolve the actual Compile items, so future csproj
-# includes/excludes are respected.
+# Resolve the actual Compile items,
+# so future csproj includes/excludes are respected.
 
-$project = Join-Path `
-    $sourceRoot `
-    'YuJanggi.Core.V2.csproj'
+$project = Join-Path $sourceRoot 'YuJanggi.Core.V2.csproj'
 
 $itemsJson = & dotnet msbuild `
     $project `
@@ -53,7 +51,6 @@ if ($sourceFiles.Count -eq 0) {
 }
 
 foreach ($item in $sourceFiles) {
-
     if (-not $item.FullPath.StartsWith(
         $sourceRoot + [IO.Path]::DirectorySeparatorChar,
         [StringComparison]::OrdinalIgnoreCase)) {
@@ -63,7 +60,6 @@ foreach ($item in $sourceFiles) {
 }
 
 if (Test-Path -LiteralPath $generatedRoot) {
-
     Remove-Item `
         -LiteralPath $generatedRoot `
         -Recurse `
@@ -76,7 +72,6 @@ New-Item `
     -Force | Out-Null
 
 foreach ($item in $sourceFiles) {
-
     $relative = $item.FullPath.Substring(
         $sourceRoot.Length + 1
     )
@@ -110,12 +105,13 @@ $assets = @(
 $hasher = [Security.Cryptography.MD5]::Create()
 
 try {
-
     foreach ($asset in $assets) {
 
-        $assetPath = $asset.FullName
-            .Substring($packageRoot.Length + 1)
-            .Replace('\', '/')
+        $assetPath = (
+            $asset.FullName.Substring(
+                $packageRoot.Length + 1
+            )
+        ).Replace('\', '/')
 
         $hash = $hasher.ComputeHash(
             [Text.Encoding]::UTF8.GetBytes(
