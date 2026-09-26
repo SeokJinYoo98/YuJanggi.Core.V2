@@ -29,6 +29,19 @@ namespace YuJanggi.Core.V2.Domain
         public Formation HanFormation;
         public float TurnTime;
     }
+    public struct NetworkSessionInfo
+    {
+        public string MatchId;
+        public PlayerTeam Team;
+        public string OpponentId;
+        public string OpponentNickname;
+    }
+
+    public static class NetworkSessionStore
+    {
+        public static NetworkSessionInfo Current;
+    }
+
     public static class GameSessionStore
     {
         public static GameSessionInfo Current;
